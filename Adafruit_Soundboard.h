@@ -8,7 +8,9 @@
 #include "Arduino.h"
 
 #define LINE_BUFFER_SIZE 80 //!< Size of the line buffer
+#ifndef MAXFILES
 #define MAXFILES 25         //!< Max number of files
+#endif
 
 /*!
  * @brief Class that stores the state and functions of the soundboard object
