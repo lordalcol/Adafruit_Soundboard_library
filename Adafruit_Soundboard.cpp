@@ -97,9 +97,9 @@ boolean Adafruit_Soundboard::reset(void) {
   delay(250);
 
   readLine();
-  // Serial.print("3>"); Serial.println(line_buffer);   // FAT type
+  Serial.print("3>"); Serial.println(line_buffer);   // FAT type
   readLine();
-  // Serial.print("4>"); Serial.println(line_buffer);   // # of files
+  Serial.print("4>"); Serial.println(line_buffer);   // # of files
 
   return true;
 }
