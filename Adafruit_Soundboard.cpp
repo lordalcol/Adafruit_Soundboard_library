@@ -158,6 +158,14 @@ uint32_t Adafruit_Soundboard::fileSize(uint8_t n) {
   return filesizes[n];
 }
 
+void Adafruit_Soundboard::playTrackAsync(uint8_t n) {
+	while (stream->available())
+		stream->read();
+
+	stream->print("#");
+	stream->println(n);
+}
+
 boolean Adafruit_Soundboard::playTrack(uint8_t n) {
   while (stream->available())
     stream->read();

@@ -56,6 +56,8 @@ public:
    */
   uint8_t volDown(void);
 
+  void playTrackAsync(uint8_t n);
+
   /*!
    * @brief Play the specified track
    * @param n track id
